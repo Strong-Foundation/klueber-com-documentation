@@ -24,7 +24,7 @@ def validate_pdf_file(file_path: str) -> bool:
 
 # Remove a file from the system.
 def remove_system_file(system_path: str) -> None:
-    os.remove(system_path)  # Delete the file at the given path
+    os.remove(path=system_path)  # Delete the file at the given path
 
 
 # Function to walk through a directory and extract files with a specific extension
@@ -54,7 +54,7 @@ def check_file_exists(system_path: str) -> bool:
 # Get the filename and extension.
 def get_filename_and_extension(path: str) -> str:
     return os.path.basename(
-        path
+        p=path
     )  # Return just the file name (with extension) from a path
 
 
